@@ -20,24 +20,24 @@
 	
 	
 <script>
-	// window.onload = function() {
-	// //document.getElementById('particles').style.visibility='hidden';
-	// 	var body = '';
-	// 	$.ajax({
- //           url: 'http://localhost/login/index2.htm',
- //           type: 'GET',
- //           success: function(res) {
- //             //var content = $(res.responseText).text();
- //             //alert(content);
-	// 		 body = res;
- //           }
- //         });
-	// 	setTimeout(function(){
-	// 		//document.getElementById('particles').style.visibility='visible';
-	// 		// Move to a new location or you can do something else
-	// 		//window.location.href = "/login/index2.htm";
-	// 		document.getElementById('bdy').innerHTML = body;
-	// 	}, 4000);
+	window.onload = function() {
+	//document.getElementById('particles').style.visibility='hidden';
+		var body = '';
+		$.ajax({
+           url: 'http://localhost/login/index2.htm',
+           type: 'GET',
+           success: function(res) {
+             //var content = $(res.responseText).text();
+             //alert(content);
+			 body = res;
+           }
+         });
+		setTimeout(function(){
+			//document.getElementById('particles').style.visibility='visible';
+			// Move to a new location or you can do something else
+			//window.location.href = "/login/index2.htm";
+			document.getElementById('bdy').innerHTML = body;
+		}, 4000);
 /*		setTimeout(function(){
 			//document.mainpage.style.opacity="100";
 			document.getElementById("loading").style["opacity"] = "0";
